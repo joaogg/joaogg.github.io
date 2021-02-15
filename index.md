@@ -804,7 +804,7 @@
                 border-color: #182252;">
         <div class="container text-center" style="padding-top: 0px;">
             <div class="col-md-12">
-                <div style="font-size: 12px;color: #39414b;">COPYRIGHT © 2019 - João Gabriel | TODOS OS DIREITOS
+                <div style="font-size: 12px;color: #39414b;">COPYRIGHT © 2021 - João Gabriel | TODOS OS DIREITOS
                     RESERVADOS.</div>
             </div>
         </div>
