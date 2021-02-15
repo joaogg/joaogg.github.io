@@ -1,1 +1,814 @@
-..
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>João Gabriel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+
+<style>
+    .kkk {
+        color: #fff;
+        text-align: center;
+        background-color: #159957;
+        background-image: linear-gradient(120deg, #155799, #159957);
+        padding: 150px;
+    }
+
+    .name {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 40px;
+    }
+
+    .topo {
+        background-image: url(src/background/fundoE.png);
+        background-repeat: no-repeat;
+        bottom: 0;
+        left: 0;
+        padding: 3em;
+        // position: absolute; 
+        right: 0;
+        text-align: center;
+        top: 0;
+        background-size: cover;
+    }
+
+
+    .topnav {
+        overflow: hidden;
+        padding: 5px 5px 80px 5px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 16px;
+
+    }
+
+    .nav-imagem a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 17px;
+
+    }
+
+    .topnav a:hover {
+        border-bottom: 2px solid white;
+    }
+
+    .nav-imagem a:hover {
+        border-bottom: 0px solid white;
+    }
+
+
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .topnav-right {
+        float: right;
+    }
+
+    .topnav .icon {
+        display: none;
+    }
+
+    .botao {
+        background: transparent;
+        border: 1px;
+        border-style: solid;
+        border-color: #ffffff;
+        width: 100%;
+        padding: 12px 24px 12px 24px;
+        font-size: 18px;
+        margin-top: 10px;
+        color: #ffffff;
+        font-family: 'PT Sans-Caption', sans-serif;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav {
+            padding: 0px 0px 30px 0px;
+        }
+
+        .topnav a:hover {
+            border-bottom: 0px solid white;
+        }
+
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+
+        .topnav-right a {
+            display: none;
+        }
+
+        .topnav-right {
+            float: left;
+        }
+
+    }
+
+    .vh {
+        height: 100vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .vh {
+            height: 100%;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .topnav-right.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+</style>
+
+<body>
+
+
+    <div class="topo" style="height: 100vh;">
+
+        <div class="topnav" id="myTopnav">
+            <div class="nav-imagem">
+                <a href="#"><i class="fas fa-atom" aria-hidden="true"></i></a>
+            </div>
+            <div class="topnav-right">
+                <a href="#quem-sou-eu">Quem sou eu?</a>
+                <a href="#meucblol">MeuCBLoL</a>
+                <a href="#experiencias-profissionais">Experiências profissionais</a>
+                <a href="#ciencia-da-computacao">Ciência da Computação</a>
+                <a href="#aplicativos-desenvolvidos">Aplicativos desenvolvidos</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+        <div class="container" style="height: 100%;
+                 min-height: 100%;
+                 display: -webkit-flex;
+                 display: flex;
+                 justify-content: center;">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+
+                        <div style="color: #ffffff; font-family: 'Roboto Condensed', sans-serif; font-size: 120px;">
+                            João Gabriel
+                        </div>
+
+                        <br><br>
+
+                    </center>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <div style="background-color: #f3f3f5;" class="vh" id="quem-sou-eu">
+        <div class="container text-center" style="height: 100%;
+                 min-height: 100%;
+                 display: -webkit-flex;
+                 display: flex;
+                 -webkit-align-items: center;
+                 align-items: center;
+                 -webkit-justify-content: center;
+                 justify-content: center;">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <center>
+                        <div style="color: #3b3b3b; font-family: 'Roboto Condensed', sans-serif;">
+                            <h2><b>Quem sou eu?</b></h2>
+                        </div>
+
+                    </center>
+                    <br><br><br>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="https://i.imgur.com/5tUZxlg.png" width="200" class="img-circle" alt="Cinque Terre">
+                    <br><br>
+                    <b>João Gabriel</b>
+                    <div style="font-family: 'PT Sans', sans-serif;">
+                        23 anos
+                        <br>
+                        Desenvolvedor Web Full Stack
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="col-md-8">
+                    <center>
+                        <div style="background-color: #ffffff; border-radius: 5px; padding: 10px 10px 10px 10px;"
+                            align="left">
+                            • Sou graduado em Ciência da Computação pelo Centro Universitário da Fundação Educacional
+                            Guaxupé (2018).<br>
+                            • Atualmente trabalho como Auxiliar de Tecnologia II no CPD (Centro de Processamento de
+                            Dados) do Centro Universitário da Fundação Educacional Guaxupé.<br>
+                            • Tenho um projeto pessoal conhecido como MeuCBLoL, que tem totalizado mais de quatro
+                            milhões de visualizações.
+                        </div>
+                    </center>
+
+                    <br>
+
+                    <div class="col-md-12 text-center">
+                        <table align="center">
+                            <tr align="center">
+                                <td width="20%" align="center">
+                                    <a href="https://www.linkedin.com/in/jo%C3%A3o-gabriel-ferro-beani-49513a150/"
+                                        target="_blank"><i class="fab fa-linkedin fa-3x"
+                                            style="color: #0077b5;"></i></a>
+                                    <div style="font-family: 'PT Sans', sans-serif;">
+                                        <br>
+                                        Linkedin
+                                    </div>
+                                </td>
+                                <td width="20%" align="center">
+                                    <a href="https://www.facebook.com/TheJoaoGabriel" target="_blank"><i
+                                            class="fab fa-facebook fa-3x" style="color: #4267b2;"></i></a>
+                                    <div style="font-family: 'PT Sans', sans-serif;">
+                                        <br>
+                                        Facebook
+                                    </div>
+                                </td>
+
+                                <td width="20%" align="center">
+                                    <a href="https://twitter.com/JoaoG_Dev" target="_blank"><i
+                                            class="fab fa-twitter-square fa-3x" style="color: #1da1f2;"></i></a>
+                                    <div style="font-family: 'PT Sans', sans-serif;">
+                                        <br>
+                                        Twitter
+                                    </div>
+                                </td>
+                                <td width="20%" align="center">
+                                    <i class="fas fa-envelope-square fa-3x" style="color: #000000;"></i>
+                                    <div style="font-family: 'PT Sans', sans-serif;">
+                                        <br>
+                                        E-mail
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="background-color: #ffffff;" class="vh" id="meucblol">
+        <div class="container text-center" style="height: 100%;
+                 min-height: 100%;
+                 display: -webkit-flex;
+                 display: flex;
+                 -webkit-align-items: center;
+                 align-items: center;
+                 -webkit-justify-content: center;
+                 justify-content: center;">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        <div style="color: #3b3b3b; font-family: 'Roboto Condensed', sans-serif;">
+                            <h2><b>MeuCBLoL.com</b></h2>
+                            <p>A Plataforma mais completa voltada para o #CBLOL!<br>
+                                Fantasy Game, Bolão, Central do Mercado, Notícias, Streams e muito mais!</p>
+                        </div>
+                    </center>
+                    <br><br><br>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="src/img/meucblol.png" width="100" class="img-circle" alt="Cinque Terre">
+                    <br><br>
+                    <div style="font-family: 'PT Sans', sans-serif;">
+                        <b>MeuCBLoL.com</b>
+                    </div>
+                    <br><br>
+                    <table align="center">
+                        <tr align="center">
+                            <td width="20%" align="center">
+                                <a href="https://www.meucblol.com" target="_blank"><i class="fas fa-link  fa-3x"
+                                        style="color: #0077b5;"></i></a>
+                                <div style="font-family: 'PT Sans', sans-serif; font-size: 10px;">
+                                    <br>
+                                    Site
+                                </div>
+                            </td>
+                            <td width="20%" align="center">
+                                <a href="https://www.facebook.com/MeuCBLOL" target="_blank"><i
+                                        class="fab fa-facebook fa-3x" style="color: #4267b2;"></i></a>
+                                <div style="font-family: 'PT Sans', sans-serif; font-size: 10px;">
+                                    <br>
+                                    Facebook
+                                </div>
+                            </td>
+
+                            <td width="20%" align="center">
+                                <a href="https://twitter.com/MeuCBLOL" target="_blank"><i
+                                        class="fab fa-twitter-square fa-3x" style="color: #1da1f2;"></i></a>
+                                <div style="font-family: 'PT Sans', sans-serif; font-size: 10px;">
+                                    <br>
+                                    Twitter
+                                </div>
+                            </td>
+                            <td width="20%" align="center">
+                                <a href="https://www.techtudo.com.br/dicas-e-tutoriais/2019/06/meucblol-como-escalar-seu-time-e-jogadores-do-2-split-de-2019-no-site-esports.ghtml"
+                                    target="_blank"><i class="fas fa-globe fa-3x" style="color: #000000;"></i></a>
+                                <div style="font-family: 'PT Sans', sans-serif; font-size: 10px;">
+                                    <br>
+                                    TechTudo
+                                </div>
+                            </td>
+
+                            <td width="20%" align="center">
+                                <a href="https://www.cabanadoleitor.com.br/escale-o-seu-time-dos-sonhos-com-o-meucblol/"
+                                    target="_blank"><i class="fas fa-globe fa-3x" style="color: #000000;"></i></a>
+                                <div style="font-family: 'PT Sans', sans-serif; font-size: 10px;">
+                                    <br>
+                                    Cabana do Leitor
+                                </div>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <div style="color: #3b3b3b; font-family: 'Roboto Condensed', sans-serif;">
+                        <br><br><br>
+                        <h2><b>" Mais de 4 Milhões de visualizações... "</b></h2>
+                        <h2><b>" Mais de 40 Mil contas criadas... "</b></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="background-color: #dddddd;" class="vh" id="experiencias-profissionais">
+        <div class="container" style="height: 100%;
+                 min-height: 100%;
+                 display: -webkit-flex;
+                 display: flex;
+                 -webkit-align-items: center;
+                 align-items: center;
+                 -webkit-justify-content: center;
+                 justify-content: center;">
+
+
+
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <br>
+                    <center>
+                        <div style="color: #3b3b3b; font-family: 'Roboto Condensed', sans-serif;">
+                            <h2><b>Experiências Profissionais</b></h2>
+                        </div>
+
+                    </center>
+                    <br>
+                </div>
+
+                <div class="col-md-6">
+                    <div style="background-color: #ffffff; border-radius: 5px; padding: 10px 10px 10px 10px;">
+
+                        <div style="font-family: 'PT Sans', sans-serif;">
+                            <br>
+                            <center>
+                                <img src="src/img/unifeg_logo.png" width="80" class="img-circle" alt="Cinque Terre">
+                                <br><br>
+                                <b>Estagiário</b> (FUNDEG - UNIFEG)<br>
+                                Guaxupé e Região, Brasil<br>
+                                <br>
+                            </center>
+                            <b>Período:</b> abril de 2017 à dezembro de 2018.<br>
+                            <b>Duração:</b> 1 ano 9 meses<br>
+                            <div class="text-right">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#model_a">
+                                    <i class="far fa-eye"></i> Visualizar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="modal fade" id="model_a" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel"><b>Estagiário</b> (FUNDEG - UNIFEG)
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <b>Tecnologias utilizadas:</b><br>
+                                <br>
+                                • Padrão de arquitetura de software MVC (Model-view-controller).<br>
+                                • Programação Orientada à Objetos.<br>
+                                • JSP (Java Server Pages).<br>
+                                • JSF (JavaServer Faces). <br>
+                                • Framework Hibernate.<br>
+                                • Framework Bootstrap.<br>
+                                • Ambiente de desenvolvimento NetBeans IDE.<br>
+                                • Banco de dados MySQL.<br>
+                                • Cliente FTP - Filezilla.<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div style="background-color: #ffffff; border-radius: 5px; padding: 10px 10px 10px 10px;">
+                        <div style="font-family: 'PT Sans', sans-serif;">
+                            <br>
+                            <center>
+                                <img src="src/img/meucblol.png" width="80" class="img-circle" alt="Cinque Terre">
+                                <br><br>
+                                <b>Administrador</b> (SITE - MeuCBLoL)<br>
+                                <a href="https://www.MeuCBLoL.com" target="_blank">www.MeuCBLoL.com</a><br>
+                                <br>
+                            </center>
+                            <b>Período:</b> março de 2016 à até o momento.<br>
+                            <b>Duração:</b> 1 ano 9 meses<br>
+                            <div class="text-right">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#model_b">
+                                    <i class="far fa-eye"></i> Visualizar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="modal fade" id="model_b" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel"><b>Administrador</b> (SITE - MeuCBLoL)
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <b>Tecnologias utilizadas:</b><br>
+                                <br>
+                                • Padrão de arquitetura de software MVC (Model-view-controller).<br>
+                                • Programação Orientada à Objetos.<br>
+                                • PHP (Personal Home Page).<br>
+                                • PHP - MySQLi Procedural. <br>
+                                • PHP - MySQLi Object-Oriented. <br>
+                                • PHP - PDO. <br>
+                                • Framework Bootstrap.<br>
+                                • Ambiente de desenvolvimento Notepad++.<br>
+                                • Banco de dados MySQL.<br>
+                                • Cliente FTP - Filezilla.<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div style="background-color: #ffffff; border-radius: 5px; padding: 10px 10px 10px 10px;">
+
+                        <div style="font-family: 'PT Sans', sans-serif;">
+                            <br>
+                            <center>
+                                <img src="src/img/unifeg_logo.png" width="80" class="img-circle" alt="Cinque Terre">
+                                <br><br>
+                                <b>Auxiliar de tecnologia II</b> (FUNDEG - UNIFEG)<br>
+                                Guaxupé e Região, Brasil<br>
+                                <br>
+                            </center>
+                            <b>Período:</b> março de 2019 à até o momento.<br>
+                            <b>Duração:</b> - <br>
+                            <div class="text-right">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#model_c">
+                                    <i class="far fa-eye"></i> Visualizar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="modal fade" id="model_c" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel"><b>Auxiliar de tecnologia II</b> (FUNDEG
+                                    - UNIFEG)
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <b>Tecnologias utilizadas:</b><br>
+                                <br>
+                                • Padrão de arquitetura de software MVC (Model-view-controller).<br>
+                                • Programação Orientada à Objetos.<br>
+                                • JSP (Java Server Pages).<br>
+                                • JSF (JavaServer Faces). <br>
+                                • Framework Hibernate.<br>
+                                • Framework Bootstrap.<br>
+                                • Ambiente de desenvolvimento NetBeans IDE.<br>
+                                • Banco de dados MySQL.<br>
+                                • Cliente FTP - Filezilla.<br>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div style="background-color: #ffffff; border-radius: 5px; padding: 10px 10px 10px 10px;">
+
+                        <div style="font-family: 'PT Sans', sans-serif;">
+                            <br>
+                            <center>
+                                <img src="src/img/sellentt.png" width="80" class="img-circle" alt="Cinque Terre">
+                                <br><br>
+                                <b>Programador</b> (Sellentt)<br>
+                                Guaxupé e Região, Brasil<br>
+                                <br>
+                            </center>
+                            <b>Período:</b> novembro de 2020 à até o momento.<br>
+                            <b>Duração:</b> - <br>
+                            <div class="text-right">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#model_d">
+                                    <i class="far fa-eye"></i> Visualizar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="modal fade" id="model_d" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel"><b>Programador</b> (Sellentt)
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <b>Tecnologias utilizadas:</b><br>
+                                <br>
+                                • JavaScript.<br>
+                                • Framework Angular.<br>
+                                • Framework Bootstrap.<br>
+                                • Banco de dados não relacional Firebase.<br>
+                                • Ambiente de desenvolvimento Visual Studio Code.<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+
+
+    <div style="background-color: #ffffff;" class="vh" id="ciencia-da-computacao">
+        <div class="container text-center" style="height: 100%;
+                 min-height: 100%;
+                 display: -webkit-flex;
+                 display: flex;
+                 -webkit-align-items: center;
+                 align-items: center;
+                 -webkit-justify-content: center;
+                 justify-content: center;">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <br>
+                    <center>
+                        <div style="color: #3b3b3b; font-family: 'Roboto Condensed', sans-serif;">
+                            <h2><b>TCC - TRABALHO DE CONCLUSÃO DE CURSO</b></h2>
+                        </div>
+                    </center>
+                    <br><br><br>
+                </div>
+
+
+                <div class="col-md-6 col-md-offset-3">
+                    <i class="fas fa-file-pdf fa-7x" style="color: #d0241a;"></i>
+                    <br><br>
+                    <b>João Gabriel</b>
+                    <br>
+                    <div style="font-family: 'PT Sans', sans-serif;">
+                        Protótipo para traducão de palavras utilizando técnicas para reconhecimento ótico de caracteres
+                        (OCR)
+                    </div>
+                    <br>
+                    <a href="/TCC - João Gabriel - PDF.pdf" target="_blank"><button type="button"
+                            class="btn btn-primary"><i class="fas fa-download"></i> Download</button></a>
+
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+    <div style="background-color: #dddddd;" class="vh" id="aplicativos-desenvolvidos">
+        <div class="container" style="height: 100%;
+                 min-height: 100%;
+                 display: -webkit-flex;
+                 display: flex;
+                 -webkit-align-items: center;
+                 align-items: center;
+                 -webkit-justify-content: center;
+                 justify-content: center;">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <center>
+                        <div style="color: #3b3b3b; font-family: 'Roboto Condensed', sans-serif;">
+                            <h2><b>Aplicativos Desenvolvidos</b></h2>
+                        </div>
+
+                    </center>
+                    <br><br>
+                </div>
+
+                <div class="col-md-4">
+                    <div style="background-color: #ffffff; border-radius: 5px; padding: 5px 5px 5px 5px;">
+
+                        <div style="font-family: 'PT Sans', sans-serif;">
+                            <br>
+                            <center>
+                                <i class="fas fa-mobile-alt fa-7x" style="color: #0077b5;"></i>
+                                <br><br>
+                                <b>Facilite Tradução</b><br>
+                                Android Studio<br>
+                                <br>
+                                <br>
+                                <a href="#" target="_blank"><button type="button" class="btn btn-primary"><i
+                                            class="fas fa-download"></i> Download APK</button></a>
+                            </center>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div style="background-color: #ffffff; border-radius: 5px; padding: 5px 5px 5px 5px;">
+
+                        <div style="font-family: 'PT Sans', sans-serif;">
+                            <br>
+                            <center>
+                                <i class="fas fa-mobile-alt fa-7x" style="color: #0077b5;"></i>
+                                <br><br>
+                                <b>MeuCBLoL</b><br>
+                                Android Studio<br>
+                                <br>
+                                <br>
+                                <a href="/aplicativos/meucblol.apk" target="_blank"><button type="button"
+                                        class="btn btn-primary"><i class="fas fa-download"></i> Download
+                                        APK</button></a>
+                            </center>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <div style="background-color: #ffffff; border-radius: 5px; padding: 5px 5px 5px 5px;">
+
+                        <div style="font-family: 'PT Sans', sans-serif;">
+                            <br>
+                            <center>
+                                <i class="fas fa-mobile-alt fa-7x" style="color: #0077b5;"></i>
+                                <br><br>
+                                <b>Gerador de Equipes</b><br>
+                                Android Studio<br>
+                                <br>
+                                <br>
+                                <a href="/aplicativos/gerador.apk" target="_blank"><button type="button"
+                                        class="btn btn-primary"><i class="fas fa-download"></i> Download
+                                        APK</button></a>
+                            </center>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+
+            </div>
+            <br><br>
+        </div>
+        <br>
+    </div>
+
+
+    <footer class="footer" style="font-family: Gill Sans W04, GillSans, Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif; 
+                background-color: #ffffff; 
+                color: #000000; 
+                padding-top: 15px; 
+                padding-bottom: 15px;
+                border-style: solid;
+                border-bottom-width: 0;
+                border-top-width: 3px;
+                border-right-width: 0;
+                border-left-width: 0; 
+                border-color: #182252;">
+        <div class="container text-center" style="padding-top: 0px;">
+            <div class="col-md-12">
+                <div style="font-size: 12px;color: #39414b;">COPYRIGHT © 2019 - João Gabriel | TODOS OS DIREITOS
+                    RESERVADOS.</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
